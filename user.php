@@ -88,7 +88,7 @@ window.location='registration.php';
 else if($fname!=''&& $uname!='' && $password!='')
 {
 global $mysqli;
-$query=$mysqli->query("insert into member(firstname,lastname,username,password,function) values ('$fname','$lname','$uname','$password','0')");
+$query=$mysqli->query("insert into member(firstname,lastname,username,password,function) values ('$fname','$lname','$uname',MD5('".$password."'),'0')");
 echo "<script> alert('registration successfull. Go to home for login');
 window.location='registration.php';
  </script>";
