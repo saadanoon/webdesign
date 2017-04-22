@@ -22,9 +22,10 @@ $mysqli->close();
 global $mysqli;
 $username = stripslashes($username);
 $password = stripslashes($password);
-$username = mysql_real_escape_string($username);
-$password = mysql_real_escape_string($password);
+$username = $mysqli->real_escape_string($username);
+$password = $mysqli->real_escape_string($password);
 $rs = $mysqli->query("SELECT ID, username, password, function FROM member WHERE username='$username' AND password='$password' AND function='0'");
+
 $rsd = $mysqli->query("SELECT username, password, function FROM member WHERE username='$username' AND password='$password' AND function='1'");
 //$row=mysqli_fetch_array($rs);
 if(mysqli_num_rows($rs)>0)
@@ -87,7 +88,7 @@ window.location='registration.php';
 else if($fname!=''&& $uname!='' && $password!='')
 {
 global $mysqli;
-$query=$mysqli->query("insert into member(firstname,lastname,username,password,function) values ('$fname','$lname','$uname','$password','0')");
+$query=$mysqli->query("insert into member(firstname,lastname,username,password,function) values ('$fname','$lname','$uname',MD5('".$password."'),'0')");
 echo "<script> alert('registration successfull. Go to home for login');
 window.location='registration.php';
  </script>";
