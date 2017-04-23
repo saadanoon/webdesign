@@ -1,0 +1,108 @@
+body {
+background-color:#E9967A;
+}
+
+.reg {
+position: absolute;
+left:500px;
+top:200px;
+}
+
+.btn {
+position:relative;
+left:600px;
+top:360px;
+}
+h2.head1 {
+position:absolute;
+left:500px;
+top:50px;
+}
+h2.head2 {
+position: absolute; 
+left:100px;
+}
+a.cnt {
+color: #000000;
+ position:absolute;
+ top:30px; 
+left:700px;
+}
+img.image {
+position:relative;
+left:80px; 
+top:60px;
+}
+.login {
+position: absolute;
+ left: 900px;
+ top:200px
+}
+.btn2 {
+position: absolute;
+ left: 980px;
+ top:290px
+}
+
+a.reg2
+{
+position: absolute;
+left:900px; 
+top:30px;
+color: #000000
+}
+
+.topmenu {
+	
+	position:absolute;
+	left: 300px;
+	top:200px;
+	background-color: #a65959; 
+	padding: 20px 20 0px 20px;
+	border:double#090909;
+}
+
+
+
+.topmenu li a {
+	display:table-column; 
+	float:left; 
+	
+	border:double#090909;
+	
+	color:#000000; 
+	text-decoration:none; 
+	font-size:16px; 
+	font-family:arial, verdana, sans-serif; 
+	font-weight:bold; 
+	text-align:center; 
+	cursor:pointer;
+
+}
+.add {
+position:absolute;
+left:500px;
+top:100px;
+
+}
+
+.btn4 {
+position:absolute;
+left:600px;
+top:450px;
+}
+
+.del {
+position:absolute;
+left:400px;
+top:200px;
+}
+
+
+button.btn6 {
+position:absolute;
+left:500px;
+top:250px;
+}
+
+
